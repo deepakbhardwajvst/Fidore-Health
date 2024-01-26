@@ -1,0 +1,10 @@
+.slick-slider.Home-carousel-main button.slick-arrow.slick-next {
+  right: 100px !important;
+}
+.slick-slider.Home-carousel-main button.slick-arrow.slick-prev {
+  left: 100px !important;
+  z-index: 10;
+}
+.slick-slider.Home-carousel-main .slick-dots {
+  bottom: 6px;
+}
