@@ -1,10 +1,21 @@
 .slick-slider.Home-carousel-main button.slick-arrow.slick-next {
-  right: 100px !important;
+  right: 50px !important;
+}
+.slick-slider.Home-carousel-main button.slick-arrow.slick-next:before,
+.slick-slider.Home-carousel-main button.slick-arrow.slick-prev:before {
+  font-size: 40px;
 }
 .slick-slider.Home-carousel-main button.slick-arrow.slick-prev {
-  left: 100px !important;
-  z-index: 10;
+  left: 50px !important;
+  z-index: 10 !important;
 }
 .slick-slider.Home-carousel-main .slick-dots {
-  bottom: 6px;
+  bottom: 6px !important;
+}
+.slick-slider.Home-carousel-main .slick-dots li button:before {
+  font-size: 10px !important;
+  color: rgb(223, 231, 238);
+}
+.slick-slider.Home-carousel-main .slick-dots li.slick-active button:before {
+  color: #fff;
 }

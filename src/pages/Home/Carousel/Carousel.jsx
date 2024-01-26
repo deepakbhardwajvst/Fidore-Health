@@ -18,9 +18,33 @@ const Carousel = () => {
             afterBr: "",
             description: "",
         },
+        {
+            imgSrc: "/slide1.png",
+            title: "",
+            afterBr: "",
+            description: "",
+        },
+        {
+            imgSrc: "/slide1.png",
+            title: "",
+            afterBr: "",
+            description: "",
+        },
+        {
+            imgSrc: "/slide1.png",
+            title: "",
+            afterBr: "",
+            description: "",
+        },
+        {
+            imgSrc: "/slide1.png",
+            title: "",
+            afterBr: "",
+            description: "",
+        },
 
     ];
-    var settings = {
+    const settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -37,7 +61,7 @@ const Carousel = () => {
                 <div key={index} className="carousel-item relative full-overlay">
                     <Image
                         src={item.imgSrc}
-                        className="carousel-img w-[100%]"
+                        className="carousel-img w-[100%] h-[70vh]"
                         alt="carousel image"
                         height={1080}
                         width={1080}

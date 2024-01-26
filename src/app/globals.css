@@ -14,10 +14,11 @@ body {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 5px 20px;
+  padding: 0px 20px;
   box-sizing: border-box;
 }
-a {
+a,
+Link {
   cursor: pointer;
 }
 .border-rounded1 {
@@ -27,11 +28,11 @@ a {
   border-radius: 50%;
 }
 .border-rounded1:hover {
-  background: #b36565;
+  background: #e3dada;
 }
 .bg1 {
   background-color: black;
 }
 .color1 {
-  color: black;
+  color: rgb(229, 217, 217);
 }
