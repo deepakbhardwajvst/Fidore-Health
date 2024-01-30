@@ -31,17 +31,29 @@ Link {
   background: #e3dada;
 }
 .bg1 {
-  background-color: black;
+  background-color: rgb(255, 155, 210);
+}
+.bg2 {
+  background-color: rgb(233, 127, 180);
+}
+.bg3 {
+  background-color: rgb(64, 43, 58);
 }
 .color1 {
-  color: rgb(229, 217, 217);
+  color: rgb(26, 14, 1);
+}
+.color1 {
+  color: rgb(19, 1, 1);
 }
 .button1 {
-  background: #862846;
-  color: white;
+  background: rgb(214, 52, 132);
+  color: rgb(245, 238, 230);
   transition: all 0.3s ease-in-out;
 }
 .button1:hover {
-  background: #751b37;
+  background: rgb(209, 41, 125);
   color: rgb(239, 230, 230);
+}
+p {
+  color: #374151;
 }

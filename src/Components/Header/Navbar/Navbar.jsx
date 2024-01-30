@@ -15,27 +15,28 @@ const Navbar = () => {
         setDropdownOpen(!isDropdownOpen);
     };
     return (
-        <nav className="flex justify-between items-center">
+        <nav className="flex justify-between items-center ">
 
             <div className="flex space-x-4 justify-center items-center">
                 <Image
                     src="/logo.png"
                     alt="Fidore Logo"
-                    className="object-contain h-14"
+                    className="object-contain h-14 w-auto"
+
                     height={144}
                     width={144}
                     priority={true}
                 />
-                <a className="color1 text-lg font-bold underline">Home</a>
-                <a className="color1">Shop</a>
-                <div className="color1 flex justify-center items-center cursor-pointer relative" onClick={toggleDropdown}>
+                <a className="color2 text-lg font-bold underline">Home</a>
+                <a className="color2">Shop</a>
+                <div className="color2 flex justify-center items-center cursor-pointer relative" onClick={toggleDropdown}>
                     <span>Plans </span>
                     {!isDropdownOpen ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlined />}
                     {isDropdownOpen && <DropdownMenu />}
                 </div>
-                <a className="color1 whitespace-nowrap">Why us?</a>
-                <a className="color1 whitespace-nowrap">How it works</a>
-                <a className="color1 whitespace-nowrap">Contact us</a>
+                <a className="color2 whitespace-nowrap">Why us?</a>
+                <a className="color2 whitespace-nowrap">How it works</a>
+                <a className="color2 whitespace-nowrap">Contact us</a>
             </div>
             <div className="flex">
                 <div className='border-rounded1'>

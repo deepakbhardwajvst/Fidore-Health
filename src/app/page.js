@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <HomePage />
+      <div className=" mt-[3.5rem]">
+        <HomePage />
+      </div>
     </div>
   );
 }

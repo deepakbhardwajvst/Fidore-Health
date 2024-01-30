@@ -11,11 +11,11 @@ const ResultsVideo = () => {
     }, []);
 
     const videos = [
-        { id: 1, title: 'Video 1', url: 'https://www.pattrn.hair/cdn/shop/files/quinn_yj4yxnb12hbtg4lfuo3cewa4.mp4' },
-        { id: 2, title: 'Video 2', url: 'https://www.pattrn.hair/cdn/shop/files/quinn_u6n41wnyogi0zm5nfohptiwu.mp4' },
-        { id: 3, title: 'Video 3', url: 'https://www.pattrn.hair/cdn/shop/files/quinn_yj4yxnb12hbtg4lfuo3cewa4.mp4' },
-        { id: 4, title: 'Video 4', url: 'https://www.pattrn.hair/cdn/shop/files/quinn_yj4yxnb12hbtg4lfuo3cewa4.mp4' },
-        { id: 5, title: 'Video 5', url: 'https://www.pattrn.hair/cdn/shop/files/quinn_yj4yxnb12hbtg4lfuo3cewa4.mp4' },
+        { id: 1, title: 'Video 1', url: '/homeVideo/v1.mp4' },
+        { id: 2, title: 'Video 2', url: '/homeVideo/v2.mp4' },
+        { id: 3, title: 'Video 3', url: '/homeVideo/v3.mp4' },
+        { id: 4, title: 'Video 4', url: '/homeVideo/v4.mp4' },
+        { id: 5, title: 'Video 5', url: '/homeVideo/v5.mp4' },
     ];
 
     return (
