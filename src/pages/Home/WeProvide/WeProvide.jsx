@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const WeProvide = ({ services }) => {
     return (
-        <div className="bg-[#f0b4b4]">
+        <div className="">
             <div className="flex container items-center justify-between h-72">
                 {services.map((service, index) => (
                     <div key={index} className="text-center flex flex-col justify-center items-center w-[32%]">
@@ -22,6 +22,7 @@ const WeProvide = ({ services }) => {
                     </div>
                 ))}
             </div>
+            <hr />
         </div>
     );
 };

@@ -36,3 +36,12 @@ Link {
 .color1 {
   color: rgb(229, 217, 217);
 }
+.button1 {
+  background: #862846;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.button1:hover {
+  background: #751b37;
+  color: rgb(239, 230, 230);
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import Carousel from './Carousel/Carousel'
 import WeProvide from './WeProvide/WeProvide';
-
+import ResultsVideo from './ResultsVideo/ResultsVideo';
+import HairGrowthJourney from './HairGrowthJourney/HairGrowthJourney';
 const HomePage = () => {
     const servicesData = [
         {
@@ -25,6 +26,8 @@ const HomePage = () => {
         <div className='bg-[#f0b4b4]'>
             <Carousel />
             <WeProvide services={servicesData} />
+            <ResultsVideo />
+            <HairGrowthJourney />
         </div>
     )
 }
