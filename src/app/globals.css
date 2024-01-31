@@ -54,6 +54,7 @@ Link {
   background: rgb(209, 41, 125);
   color: rgb(239, 230, 230);
 }
-p {
+p,
+.p {
   color: #374151;
 }

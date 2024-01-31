@@ -4,7 +4,10 @@ import WeProvide from './WeProvide/WeProvide';
 import ResultsVideo from './ResultsVideo/ResultsVideo';
 import HairGrowthJourney from './HairGrowthJourney/HairGrowthJourney';
 import HairCareComponent from './HairCareComponent/HairCareComponent';
+import OurFormula from './OurFormula/OurFormula';
+
 const HomePage = () => {
+
     const servicesData = [
         {
             title: 'FDA Approved Treatments',
@@ -28,6 +31,28 @@ const HomePage = () => {
         { title: 'Personal Hair Coach', description: 'Our coach will work with you regularly to get the best results for your hair.', img: "/homeImg/care3.png" },
         { title: 'Clinically Supported', description: 'Our doctors prescribe and follow up monthly for the best results.', img: "/homeImg/care4.png" },
     ];
+    const HairCareFeatures = [
+        {
+            title: 'Gut support therapy',
+            description: 'Boosts nutrient absorption through probiotics in the gut.',
+            image: '/homeImg/formula1.png',
+        },
+        {
+            title: 'Minoxidil 5% Solution',
+            description: 'Increases blood supply on the scalp to deliver vitamins to hair.',
+            image: '/homeImg/formula2.png',
+        },
+        {
+            title: 'DHT Blocker Shampoo',
+            description: 'Maintains scalp health by blocking excessive DHT to hair follicles.',
+            image: '/homeImg/formula3.png',
+        },
+        {
+            title: 'Rotational VT',
+            description: 'Boosts body with vital nutrients for faster hair growth.',
+            image: '/homeImg/formula4.png',
+        },
+    ];
 
     return (
         <div className='bg1'>
@@ -36,6 +61,7 @@ const HomePage = () => {
             <ResultsVideo />
             <HairGrowthJourney />
             <HairCareComponent features={features} />
+            <OurFormula HairCareFeatures={HairCareFeatures} />
         </div>
     )
 }

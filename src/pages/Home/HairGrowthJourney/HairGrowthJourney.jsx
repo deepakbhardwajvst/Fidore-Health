@@ -24,13 +24,14 @@ const HairGrowthJourney = () => {
     return (
         <div className="">
             <div className="container  p-8 rounded-md shadow-md text-center flex flex-col items-center justify-center">
-                <h1 className="text-3xl font-bold mb-6">Start Your Hair Growth Journey in 3 Simple Steps</h1>
+                <h1 className="text-3xl font-bold mb-3">Start Your Hair Growth Journey in 3 Simple Steps</h1>
                 <div className="flex justify-center space-x-4 mb-4">
                     {imageData.map((data, index) => (
-                        <div key={index} className="max-w-xs flex flex-col justify-center items-center overflow-hidden bg2 rounded-lg shadow-md p-6 mx-2 my-4">
+                        <div key={index} className="w-33% flex  justify-center items-center overflow-hidden bg-white rounded-lg shadow-md p-6 mx-2 mt-4">
                             <Image src={data.img} alt={`Step ${index + 1}`} width={150} height={150} className="w-max" />
-                            <h3 className="text-lg font-semibold mt-4">{data.heading}</h3>
-                            <p className="text-gray-600 mt-2">{data.paragraph}</p>
+                            <div className="flex flex-col ">
+                                <h3 className="text-lg text-start font-semibold mt-4">{data.heading}</h3>
+                                <p className=" mt-2 text-start">{data.paragraph}</p></div>
                         </div>
 
                     ))}
