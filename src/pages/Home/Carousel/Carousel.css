@@ -14,7 +14,7 @@
 }
 .slick-slider.Home-carousel-main .slick-dots li button:before {
   font-size: 10px !important;
-  color: rgb(223, 231, 238);
+  color: rgb(9, 30, 2);
 }
 .slick-slider.Home-carousel-main .slick-dots li.slick-active button:before {
   color: #fff;

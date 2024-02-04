@@ -4,44 +4,40 @@ import Slider from 'react-slick'
 import Image from 'next/image';
 import "./Carousel.css"
 import "@/app/globals.css"
+import ButtonOne from './../../../Components/Button/ButtonOne';
 const Carousel = () => {
     const carouselData = [
         {
             imgSrc: "/slide1.png",
-            title: "",
-            afterBr: "",
-            description: "",
+            title: "Doctor Recommended Hair loss Treatment",
+            afterBr: "Know The Root Cause Of Your Hair Loss",
+            description: "93% saw results* in 5 months",
         },
         {
             imgSrc: "/slide1.png",
-            title: "",
-            afterBr: "",
-            description: "",
+            title: "Doctor Recommended Hair loss Treatment",
+            afterBr: "Know The Root Cause Of Your Hair Loss",
+            description: "93% saw results* in 5 months",
         },
         {
             imgSrc: "/slide1.png",
-            title: "",
-            afterBr: "",
-            description: "",
+            title: "Doctor Recommended Hair loss Treatment",
+            afterBr: "Know The Root Cause Of Your Hair Loss",
+            description: "93% saw results* in 5 months",
         },
         {
             imgSrc: "/slide1.png",
-            title: "",
-            afterBr: "",
-            description: "",
+            title: "Doctor Recommended Hair loss Treatment",
+            afterBr: "Know The Root Cause Of Your Hair Loss",
+            description: "93% saw results* in 5 months",
         },
         {
             imgSrc: "/slide1.png",
-            title: "",
-            afterBr: "",
-            description: "",
+            title: "Doctor Recommended Hair loss Treatment",
+            afterBr: "Know The Root Cause Of Your Hair Loss",
+            description: "93% saw results* in 5 months",
         },
-        {
-            imgSrc: "/slide1.png",
-            title: "",
-            afterBr: "",
-            description: "",
-        },
+
 
     ];
     const settings = {
@@ -61,20 +57,21 @@ const Carousel = () => {
                 <div key={index} className="carousel-item relative full-overlay">
                     <Image
                         src={item.imgSrc}
-                        className="carousel-img w-[100%] h-[70vh]"
+                        className="carousel-img w-[100%] h-[auto]"
                         alt="carousel image"
                         height={1080}
                         width={1080}
                         priority={true}
                     />
-                    <div className="img-info absolute top-[15%] left-[7%] z-10 ">
-                        <h2 className="mb-4 text-[60px] font-bold text-[#000000b3] ">
-                            {item.title} <br />
-                            {item.afterBr}
+                    <div className="img-info absolute top-[28%] left-[7%] z-10 w-[68vw] flex flex-col">
+                        <h2 className="mb-4 textsize1 font-bold p-dark ">
+                            {item.title}
                         </h2>
-                        <p className="text-[30px] font-medium text-[#797878]">
+                        <h3 className='font-medium textsize2 p-dark w-[50vw]'>{item.afterBr}</h3>
+                        <p className="textsize1 font-medium p">
                             {item.description}
                         </p>
+                        <ButtonOne buttonName="TAKE FREE HAIR TEST" />
                     </div>
                 </div>
             ))}

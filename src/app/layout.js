@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header/Header";
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,6 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        {/* Preconnect to Cloudflare CDN */}
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+        {/* DNS prefetch for Cloudflare CDN */}
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+      </Head>
       <body className={`  ${inter.className}`}>
         <Header />
         {children}

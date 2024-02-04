@@ -3,11 +3,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format("woff2");
+  font-display: swap;
+}
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Pacifico", sans-serif;
 }
 
 .container {
@@ -31,7 +40,7 @@ Link {
   background: #e3dada;
 }
 .bg1 {
-  background-color: rgb(255, 155, 210);
+  background-color: rgb(255, 255, 255);
 }
 .bg2 {
   background-color: rgb(233, 127, 180);
@@ -42,19 +51,76 @@ Link {
 .color1 {
   color: rgb(26, 14, 1);
 }
-.color1 {
+.color1:hover {
   color: rgb(19, 1, 1);
 }
 .button1 {
-  background: rgb(214, 52, 132);
-  color: rgb(245, 238, 230);
+  background: rgb(213, 188, 188);
+  color: rgb(0, 0, 0);
   transition: all 0.3s ease-in-out;
 }
 .button1:hover {
-  background: rgb(209, 41, 125);
+  background: rgb(232, 223, 227);
   color: rgb(239, 230, 230);
 }
 p,
 .p {
   color: #374151;
+}
+.p-dark {
+  color: #2b3442;
+}
+
+.textsize1 {
+  font-size: 31px;
+}
+.textsize2 {
+  font-size: 40px;
+}
+.textsize3 {
+  font-size: 24px;
+}
+@media (max-width: 1440px) {
+  .textsize1 {
+    font-size: 28px;
+  }
+  .textsize2 {
+    font-size: 35px;
+  }
+  .textsize3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .textsize1 {
+    font-size: 25px;
+  }
+  .textsize2 {
+    font-size: 31px;
+  }
+  .textsize3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .textsize1 {
+    font-size: 22px;
+  }
+  .textsize2 {
+    font-size: 26px;
+  }
+  .textsize3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .textsize1 {
+    font-size: 18px;
+  }
+  .textsize2 {
+    font-size: 23px;
+  }
+  .textsize3 {
+    font-size: 14px;
+  }
 }
