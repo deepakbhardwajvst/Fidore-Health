@@ -1,15 +1,7 @@
-"use client"
+import React from 'react';
 import ButtonOne from '@/Components/Button/ButtonOne';
 
-import React, { useRef, useEffect } from 'react';
 const ResultsVideo = () => {
-    const videoRef = useRef(null);
-
-    useEffect(() => {
-        // Auto-play video on mount
-        videoRef.current.play();
-    }, []);
-
     const videos = [
         { id: 1, title: 'Video 1', url: '/homeVideo/v1.mp4' },
         { id: 2, title: 'Video 2', url: '/homeVideo/v2.mp4' },
@@ -25,8 +17,15 @@ const ResultsVideo = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                     {videos.map((video) => (
                         <div key={video.id} className="flex flex-col items-center">
-                            <video ref={videoRef} width="300"
-                                height="550" title={video.title} autoPlay muted controls={false} loop>
+                            <video
+                                width="300"
+                                height="550"
+                                title={video.title}
+                                autoPlay
+                                muted  // Mute the video to comply with browser policies
+                                controls={false}
+                                loop
+                            >
                                 <source src={video.url} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>

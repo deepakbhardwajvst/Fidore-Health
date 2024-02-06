@@ -17,6 +17,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Pacifico", sans-serif;
+  background: rgb(176, 119, 161);
 }
 
 .container {
@@ -36,6 +37,7 @@ Link {
   margin: 10px;
   border-radius: 50%;
 }
+
 .border-rounded1:hover {
   background: #e3dada;
 }
@@ -63,7 +65,7 @@ Link {
   background: rgb(232, 223, 227);
   color: rgb(239, 230, 230);
 }
-p,
+.bor p,
 .p {
   color: #374151;
 }
@@ -100,6 +102,11 @@ p,
   }
   .textsize3 {
     font-size: 18px;
+  }
+}
+@media (max-width: 950px) {
+  .nav-display-none {
+    display: none;
   }
 }
 @media (max-width: 768px) {
