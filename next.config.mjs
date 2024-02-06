@@ -1,21 +1,22 @@
 // next.config.mjs
-import build from "next/dist/build";
 import TerserPlugin from "terser-webpack-plugin";
 
 const nextConfig = {
   // Your other configurations...
 
-  babelPreset: [
-    [
-      "next/babel",
-      {
-        "preset-env": {
-          useBuiltIns: "usage",
-          corejs: 3,
+  babel: {
+    presets: [
+      [
+        "next/babel",
+        {
+          "preset-env": {
+            useBuiltIns: "usage",
+            corejs: 3,
+          },
         },
-      },
+      ],
     ],
-  ],
+  },
 
   webpack: (config, { isServer }) => {
     // Only run TerserPlugin on the client side (not for server-side rendering)

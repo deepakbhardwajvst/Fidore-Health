@@ -343,17 +343,18 @@ const HairLossForm = () => {
 
             default:
                 return (
-                    <div className=" border-black">
+                    <div className="border-black">
                         <ul className="">
-                            <li className="flex flex-col"><span className=' font-bold'>Name: </span><span>{formData.name}</span></li>
-                            <li className="flex flex-col"><span className=' font-bold'>Number: </span><span>{formData.number}</span></li>
-                            <li className="flex flex-col"><span className=' font-bold'>Email: </span><span>{formData.email}</span></li>
-                            <li className="flex flex-col"><span className=' font-bold'>Age: </span><span>{formData.age}</span></li>
-                            <li className="flex flex-col"><span className=' font-bold'>Hair Loss Stage: </span><span>{formData.hairLossStage}</span></li>
-                            <li className="flex flex-col"><span className=' font-bold'>Family History: </span><span>{formData.familyHistory}</span></li>
-                            <li className="flex flex-col"><span className=' font-bold'>Health Issues: </span><span>{formData.healthIssues}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Name:&apos; </span><span>{formData.name}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Number:&apos; </span><span>{formData.number}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Email:&apos; </span><span>{formData.email}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Age:&apos; </span><span>{formData.age}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Hair Loss Stage:&apos; </span><span>{formData.hairLossStage}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Family History:&apos; </span><span>{formData.familyHistory}</span></li>
+                            <li className="flex flex-col"><span className='font-bold'>Health Issues:&apos; </span><span>{formData.healthIssues}</span></li>
                         </ul>
                     </div>
+
                 );
         }
     };
