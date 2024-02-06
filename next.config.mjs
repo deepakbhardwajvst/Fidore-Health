@@ -5,17 +5,7 @@ const nextConfig = {
   // Your other configurations...
 
   babel: {
-    presets: [
-      [
-        "next/babel",
-        {
-          "preset-env": {
-            useBuiltIns: "usage",
-            corejs: 3,
-          },
-        },
-      ],
-    ],
+    presets: ["next/babel"],
   },
 
   webpack: (config, { isServer }) => {
