@@ -1,10 +1,9 @@
 import React from 'react'
 import Carousel from './Carousel/Carousel'
-import WeProvide from './WeProvide/WeProvide';
+
 import ResultsVideo from './ResultsVideo/ResultsVideo';
 import HairGrowthJourney from './HairGrowthJourney/HairGrowthJourney';
-import HairCareComponent from './HairCareComponent/HairCareComponent';
-import OurFormula from './OurFormula/OurFormula';
+
 
 const HomePage = () => {
 
@@ -57,11 +56,10 @@ const HomePage = () => {
     return (
         <div className='bg1'>
             <Carousel />
-            <WeProvide services={servicesData} />
+
             <ResultsVideo />
             <HairGrowthJourney />
-            <HairCareComponent features={features} />
-            <OurFormula HairCareFeatures={HairCareFeatures} />
+
         </div>
     )
 }
